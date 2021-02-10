@@ -1,0 +1,8 @@
+// MIXINS
+
+// ------------------------------------------
+// Front page icon animation
+@mixin home-icon-animation($start){
+    opacity: 0%;
+    animation: fade 6s linear $start infinite;
+}

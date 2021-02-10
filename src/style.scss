@@ -1,13 +1,4 @@
 /* --------------------------------------------------------------- */
-/* Global variables */
-
-:root {
-    --dropdownSize: 15px;
-    --homeMobileTextMargin: 2vh;
-    --cardSize: 320px;
-}
-
-/* --------------------------------------------------------------- */
 /* General CSS, applies to whole webpage */
 html {
     display: flex;
@@ -201,11 +192,12 @@ body {
 }
 
 .front-page-icon {
-    font-size: 20vw;
+    font-size: 20vw !important;
     position: absolute;
 }
 
 #desktop-windows {
+    opacity: 0%;
     animation: fade 6s linear 0s infinite;
 }
 
