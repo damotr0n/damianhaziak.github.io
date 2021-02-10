@@ -13,10 +13,10 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
         <Navbar />
         <ContentPage id={homeContent.id} content={homeContent.content} />
-    </div>
+    </>
   );
 }
 
