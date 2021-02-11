@@ -1,0 +1,79 @@
+// PROJECTS SECTION
+
+// ------------------------------------------
+// Desktop defaults
+
+#projects {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container a {
+    text-decoration: none;
+    margin: 1em;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #292929;
+    width: 300px;
+    padding: 1em;
+    transition: all 0.1s ease-out;
+}
+
+.card:hover, .card-contact:hover {
+    transform: scale(1.1);
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-family: $font-secondary;
+    color: white;
+    margin: auto 0;
+}
+
+.card-description {
+    font-family: $font-secondary;
+    color: white;
+    margin: auto 0;
+    font-style: normal;
+}
+
+// ------------------------------------------
+// Projects mobile
+@media screen and (max-width: 430px){
+
+    .main-title {
+        font-size: 74px;
+    }
+
+    .card-container {
+        width: 90vw;
+    }
+
+    .card {
+        width: 60vw;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img {
+        width: 75%;
+        height: 75%;
+    }
+
+}

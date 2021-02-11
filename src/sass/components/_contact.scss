@@ -1,0 +1,49 @@
+// CONTACT SECTION
+
+// ------------------------------------------
+// Desktop defaults
+
+#contact {
+    text-align: center;
+}
+
+.card-contact {
+    width: 300px;
+    transition: all 0.1s ease-out;
+}
+
+.card-contact svg {
+    width: 100%;
+    height: auto;
+}
+
+.card-contact svg path {
+    fill: white;
+}
+
+.contact-card-container {
+    max-width: 1000px;
+}
+
+.contact-card-container a {
+    margin: 2em 4em;
+}
+
+// ------------------------------------------
+// Contacts mobile
+
+@media screen and (max-width: 430px){
+
+    #contacts h2 {
+        font-size: 74px;
+    }
+
+    .contact-card-container a {
+        margin: 1em 4em;
+    }
+
+    .card-contact {
+        width: 220px;
+    }
+
+}

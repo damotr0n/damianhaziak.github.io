@@ -1,0 +1,50 @@
+// BASE SCSS
+// not section specific
+
+// ------------------------------------------
+// Desktop defaults
+html {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 6vh 94vh;
+    grid-template-areas: 
+    "header"
+    "body";
+    background-color: #121212;
+    margin: auto;
+}
+
+.content {
+    grid-area: body;
+    transition: opacity 0.5s;
+    max-width: 1920px;
+    margin: 0 auto;
+    opacity: 100%;
+    z-index: 1;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: 0;
+}
+
+.hidden-display {
+    display: none;
+}
+
+.subtitle {
+    font-family: $font-primary;
+    color: white;
+    font-style: italic;
+}
+
+.main-title {
+    font-family: $font-secondary;
+    font-size: 90px;
+    color: white;
+    margin: auto;
+}

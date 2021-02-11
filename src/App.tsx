@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './style.scss';
+import './main.scss'
 import Navbar from './components/Navbar';
 import HomeContent from './components/HomeContent';
 import ContentPage from './components/ContentPage';
