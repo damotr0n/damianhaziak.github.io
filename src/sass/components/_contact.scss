@@ -10,25 +10,27 @@
 .card-contact {
     width: 300px;
     transition: all 0.1s ease-out;
-}
 
-.card-contact svg {
-    width: 100%;
-    height: auto;
-}
+    svg {
+        width: 100%;
+        height: auto;
 
-.card-contact svg path {
-    fill: white;
+        path {
+            fill: white;
+        }
+
+    }
+
 }
 
 .contact-card-container {
     max-width: 1000px;
-}
 
-.contact-card-container a {
-    margin: 2em 4em;
-}
+    a {
+        margin: 2em 4em;
+    }
 
+}
 // ------------------------------------------
 // Contacts mobile
 

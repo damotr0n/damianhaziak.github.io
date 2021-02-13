@@ -19,27 +19,28 @@
     margin: auto 0;
     grid-area: header;
     max-width: 1920px;
+
+    ul {
+        margin: auto 0;
+        padding: 0 2vw;
+
+        li {
+            text-transform: uppercase;
+            font-family: $font-secondary;
+            font-weight: 300;
+            display: inline;
+            padding: 0 1vw;
+            color: white;
+        }
+
+    }
+
 }
 
 @media screen and (min-width: 1920px){
     #navbar-ul-wrapper {
         margin-right: calc((100vw - 1920px) / 2);
     }
-}
-
-#navbar-ul-wrapper ul {
-    margin: auto 0;
-    padding: 0 2vw;
-}
-
-#navbar-ul-wrapper ul li {
-    text-transform: uppercase;
-    font-family: $font-secondary;
-    font-weight: 300;
-    display: inline;
-    padding: 0 1vw;
-    color: white;
-
 }
 
 #navbar-item-wrapper {
@@ -53,9 +54,7 @@
     display: inline-block;
     position: relative;
     font-size: 2.25vh;
-}
-
-.navbar-item:after { 
+}:after { 
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -66,9 +65,7 @@
     background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-}
-
-.navbar-item:hover:after { 
+}:hover:after { 
     width: 100%; 
     left: 0; 
 }

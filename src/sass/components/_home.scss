@@ -24,31 +24,33 @@
 }
 
 #home {
+
     display: grid;
     grid-template-columns: 10% 50% 40%;
     grid-template-rows: auto auto;
     grid-template-areas:
     "left-margin left-content-hi right-content"
     "left-margin left-content-lo right-content";
-}
 
-#home h1 {
-    font-family: $font-primary;
-    font-size: 110px;
-    margin: auto 0 5vh 0;
-    color: white;
-    line-height: 0.8em;
-    grid-area: left-content-hi;
-}
+    h1 {
+        font-family: $font-primary;
+        font-size: 110px;
+        margin: auto 0 5vh 0;
+        color: white;
+        line-height: 0.8em;
+        grid-area: left-content-hi;
+    }
 
-#home p {
-    font-family: $font-secondary;
-    font-weight: 300;
-    font-size: 52px;
-    margin: 0 0 auto 0;
-    color: white;
-    line-height: 1.1em;
-    grid-area: left-content-lo;
+    p {
+        font-family: $font-secondary;
+        font-weight: 300;
+        font-size: 52px;
+        margin: 0 0 auto 0;
+        color: white;
+        line-height: 1.1em;
+        grid-area: left-content-lo;
+    }
+
 }
 
 .fall-down-animation {
@@ -93,25 +95,26 @@
             "top-content"
             "mid-content"
             "bot-content";
+
+        h1 {
+            font-size: 74px;
+            line-height: 0.9em;
+            grid-area: top-content;
+            margin: auto 0 2vh 7vw;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.3em;
+            grid-area: bot-content;
+            margin: 2vh 7vw auto 7vw;
+        }
+
     }
 
     #home-text {
         grid-area: top-content;
         margin: 20% 13vw 0 10vw;
-    }
-
-    #home h1 {
-        font-size: 74px;
-        line-height: 0.9em;
-        grid-area: top-content;
-        margin: auto 0 2vh 7vw;
-    }
-
-    #home p {
-        font-size: 19px;
-        line-height: 1.3em;
-        grid-area: bot-content;
-        margin: 2vh 7vw auto 7vw;
     }
 
     #home-image {

@@ -13,11 +13,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.card-container a {
-    text-decoration: none;
-    margin: 1em;
+    a {
+        text-decoration: none;
+        margin: 1em;
+    }
+
 }
 
 .card {
@@ -65,9 +66,7 @@
 
     .card {
         width: 60vw;
-    }
-
-    .card:hover {
+    }:hover {
         transform: scale(1.05);
     }
 
