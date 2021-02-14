@@ -1,21 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './main.scss'
 import Navbar from './components/Navbar';
-import HomeContent from './components/HomeContent';
 import ContentPage from './components/ContentPage';
+
+import HomeContent from './components/HomeContent';
+import ContactContent from './components/ContactContent';
+import ProjectsContent from './components/ProjectsContent';
 
 function App() {
 
-  let homeContent = {
-    id: "home",
-    content: <HomeContent />
-  }
+  let contentList = [
+    {
+      id: "home",
+      content: <HomeContent />
+    },
+    {
+      id: "projects",
+      content: <ProjectsContent />
+    },
+    {
+      id: "contact",
+      content: <ContactContent />
+    }
+  ]
+
+  const [content, setContent] = useState(contentList[0]);
 
   return (
     <>
         <Navbar />
-        <ContentPage id={homeContent.id} content={homeContent.content} />
+        <ContentPage id={content.id} content={content.content} />
     </>
   );
 }
