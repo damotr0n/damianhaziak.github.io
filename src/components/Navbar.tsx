@@ -1,15 +1,15 @@
 import React from 'react';
 import NavbarListItem from './NavbarListItem';
 
-function Navbar(){
+function Navbar(props: {menuItems: string[] }){
 
-    let menuItems = [
-        {title: "Home"},
-        {title: "Projects"},
-        {title: "Contact"}
-    ];
+    // let menuItems = [
+    //     {title: "Home"},
+    //     {title: "Projects"},
+    //     {title: "Contact"}
+    // ];
 
-    var menu = menuItems.map(item => <NavbarListItem title={item.title}/> );
+    var menu = props.menuItems.map(name => <NavbarListItem title={name}/> );
 
     return(
         <div id="navbar">

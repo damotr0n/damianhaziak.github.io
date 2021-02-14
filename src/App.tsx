@@ -22,13 +22,15 @@ function App() {
       id: "contact",
       content: <ContactContent />
     }
-  ]
+  ];
+
+  var menu = contentList.map(item => item.id);
 
   const [content, setContent] = useState(contentList[0]);
 
   return (
     <>
-        <Navbar />
+        <Navbar menuItems={menu}/>
         <ContentPage id={content.id} content={content.content} />
     </>
   );
