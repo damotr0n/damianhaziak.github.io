@@ -54,20 +54,24 @@
     display: inline-block;
     position: relative;
     font-size: 2.25vh;
-}:after { 
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 1px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}:hover:after { 
-    width: 100%; 
-    left: 0; 
+
+    &:after { 
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 50%;
+        position: absolute;
+        background: white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    
+    &:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
 }
 
 #navbar-menu-wrapper {
