@@ -4,6 +4,7 @@ import React from 'react';
 function ProjectsContent() {
     return (
         <>
+            <h1>Projects</h1>
         </>
     );
 }

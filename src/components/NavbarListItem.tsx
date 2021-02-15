@@ -1,10 +1,10 @@
 import React from 'react';
 
-type NavbarItemProps = {title: string};
+type NavbarItemProps = {title: string, callback: any};
 
 function NavbarListItem(props: NavbarItemProps){
     return(
-        <li><a className="navbar-item">{props.title}</a></li>
+        <li><a className="navbar-item" onClick={() => props.callback(props.title)}>{props.title}</a></li>
     );
 }
 

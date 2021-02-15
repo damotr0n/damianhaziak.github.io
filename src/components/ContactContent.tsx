@@ -4,6 +4,7 @@ import React from 'react';
 function ContactContent() {
     return (
         <>
+            <h1>Contact</h1>
         </>
     );
 }

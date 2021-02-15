@@ -1,15 +1,9 @@
 import React from 'react';
 import NavbarListItem from './NavbarListItem';
 
-function Navbar(props: {menuItems: string[] }){
+function Navbar(props: {menuItems: string[], callback: any}){
 
-    // let menuItems = [
-    //     {title: "Home"},
-    //     {title: "Projects"},
-    //     {title: "Contact"}
-    // ];
-
-    var menu = props.menuItems.map(name => <NavbarListItem title={name}/> );
+    var menu = props.menuItems.map(name => <NavbarListItem title={name} callback={props.callback}/> );
 
     return(
         <div id="navbar">
