@@ -25,12 +25,12 @@
 
 .contact-card-container {
     max-width: 1000px;
-
-    a {
-        margin: 2em 4em;
-    }
-
 }
+
+.contact-card-container-anchor {
+    margin: 2em 4em;
+}
+
 // ------------------------------------------
 // Contacts mobile
 
@@ -40,7 +40,7 @@
         font-size: 74px;
     }
 
-    .contact-card-container a {
+    .contact-card-container-anchor {
         margin: 1em 4em;
     }
 
