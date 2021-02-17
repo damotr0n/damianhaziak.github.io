@@ -1,23 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import CardWrapper from './CardWrapper'
+import ProjectCard from './ProjectCard'
 
-// TODO: finish
+interface Iimg {
+    src: string;
+    alt: string;
+}
+
+interface Iproject {
+    href: string;
+    img: Iimg;
+    "card-title": string;
+    "card-desc": string;
+}
+
 function ProjectsContent() {
+
+    const [projects, setProjects] = useState<JSX.Element[]>()
+
+    useEffect(() => {
+        
+        fetch('data/projects.json',
+        {
+          headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }
+        })
+        .then(response => {
+            return response.json()
+        })
+        .then(myJson => {
+            const projectsList = myJson.map((project: Iproject) => 
+                <ProjectCard 
+                    href={project.href}
+                    imgSrc={project.img.src}
+                    imgAlt={project.img.alt}
+                    title={project['card-title']}
+                    desc={project['card-desc']}
+                />
+            );
+            setProjects(projectsList)
+        });
+
+    }, [])
+
     return (
-        <>
-            <h2 className="main-title">Projects</h2>
-            <p className="subtitle">Click a card to be sent to a project related page.</p>
-            <div className="card-container">
-
-                <a href="https://github.com/DamianHaziak/Analysis-of-computer-music" target="_blank">
-                    <div className="card">
-                        <img className="card-img" src="images/des-general_structure.png" alt="Analysis of Comp Mus" />
-                        <h3 className="card-title"> Analysis of computer music using machine learning models </h3>
-                        <p className="card-description">My final year dissertation project. Created a software synthesizer analysis tool that extracts features from sound created by the synthesizer.</p>
-                    </div>
-                </a>
-
-            </div>
-        </>
+        <CardWrapper 
+            mainTitle={"Projects"}
+            subtitle={"Click on a card to be sent to a project related page"}
+        >
+            {projects}
+        </CardWrapper>
     );
 }
 
