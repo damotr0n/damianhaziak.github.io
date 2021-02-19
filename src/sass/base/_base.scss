@@ -9,12 +9,16 @@ html {
 
 body {
     margin: 0;
+    background-color: #121212;
+}
+
+#root {
+    margin: 0;
     display: grid;
     grid-template-rows: 6vh 94vh;
     grid-template-areas: 
     "header"
     "body";
-    background-color: #121212;
     margin: auto;
 }
 
