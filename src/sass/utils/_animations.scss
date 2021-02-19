@@ -1,0 +1,13 @@
+// ANIMATIONS
+
+// ------------------------------------------
+// Fade in from top animation
+
+@keyframes dropDown {
+    0% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+}
+
+.fall-down-animation {
+    animation: dropDown 1s ease-out 0.05s 1;
+}
