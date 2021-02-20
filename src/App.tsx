@@ -17,15 +17,15 @@ function App() {
   let contentList: Array<Icontents> = [
     {
       id: "home",
-      content: <HomeContent />
+      content: <HomeContent key={"home"} />
     },
     {
       id: "projects",
-      content: <ProjectsContent />
+      content: <ProjectsContent key={"proj"} />
     },
     {
       id: "contact",
-      content: <ContactContent />
+      content: <ContactContent key={"cont"} />
     }
   ];
 

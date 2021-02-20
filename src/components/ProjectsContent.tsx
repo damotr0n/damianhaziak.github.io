@@ -33,6 +33,7 @@ function ProjectsContent() {
         .then(myJson => {
             const projectsList = myJson.map((project: Iproject) => 
                 <ProjectCard 
+                    key={project.href}
                     href={project.href}
                     imgSrc={project.img.src}
                     imgAlt={project.img.alt}

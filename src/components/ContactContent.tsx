@@ -28,6 +28,7 @@ function ContactContent() {
         .then(myJson => {
             const projectsList = myJson.map((contact: Icontact) => 
                 <ContactCard 
+                    key={contact.href}
                     href={contact.href}
                     svg_path={contact.svg_path}
                     view_box={contact.view_box}
