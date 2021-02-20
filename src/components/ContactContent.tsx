@@ -26,7 +26,6 @@ function ContactContent() {
             return response.json()
         })
         .then(myJson => {
-            console.log(myJson)
             const projectsList = myJson.map((contact: Icontact) => 
                 <ContactCard 
                     href={contact.href}
