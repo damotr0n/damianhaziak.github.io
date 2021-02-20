@@ -22,13 +22,14 @@ body {
     margin: auto;
 }
 
-.content {
+div .content {
     grid-area: body;
-    transition: opacity 0.5s;
+    // transition: opacity 0.25s;
     max-width: 1920px;
     margin: 0 auto;
     opacity: 100%;
     z-index: 1;
+    height: 100%;
 }
 
 .hidden {

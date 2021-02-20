@@ -1,11 +1,14 @@
-import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 //TODO: change content to children
 function ContentPage(props: {id: string, content: JSX.Element}){
+
     return(
-        <div id={props.id} className="content">
-            {props.content}
-        </div>
+        <Fade>
+            <div id={props.id} className="content">
+                {props.content}
+            </div>
+        </Fade>
     );
 }
 
