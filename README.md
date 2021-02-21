@@ -13,6 +13,6 @@ Animated using [React Transition Group](https://reactcommunity.org/react-transit
 
 ---
 
-A simple Github Actions CI pipeline was also created [here](../blob/develop/.github/workflows/ci_cd.yml)
+A simple Github Actions CI pipeline was also created [here](../develop/.github/workflows/ci_cd.yml)
 
 ---
