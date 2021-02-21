@@ -1,0 +1,65 @@
+[
+    {
+        "href": "https://github.com/DamianHaziak/Analysis-of-computer-music",
+        "img": {
+            "src": "images/des-general_structure.png",
+            "alt": "Analysis of Comp Mus"
+        },
+        "card-title": "Analysis of computer music using machine learning models",
+        "card-desc": "My final year dissertation project. Created a software synthesizer analysis tool that extracts features from sound created by the synthesizer."
+    },
+    {
+        "href": "https://github.com/DamianHaziak/ray-tracing",
+        "img": {
+            "src": "images/IMGPM.png",
+            "alt": "Ray Tracing Example"
+        },
+        "card-title": "Ray Tracing",
+        "card-desc": "Project where I got to implement a ray tracing based renderer including: photon mapping, reflection, refraction, and diffusion. The image above is an example of a rendered image."
+    },
+    {
+        "href": "https://github.com/DamianHaziak/damianhaziak.github.io",
+        "img": {
+            "src": "images/personal-portfolio.png",
+            "alt": "personal portfolio"
+        },
+        "card-title": "Personal Portfolio webpage",
+        "card-desc": "This webpage, created in my spare time."
+    },
+    {
+       "href": "https://codepen.io/collection/AyGOzb",
+       "img": {
+           "src": "images/fcc-reswebdes.png",
+           "alt": "responsive web design project collection"
+       },
+       "card-title": "Responsive Web Design Certification",
+       "card-desc": "A series of small projects created to obtain the Responsive Web Design Certification from FreeCodeCamp."
+    },
+    {
+        "href": "https://codepen.io/collection/Dommge",
+        "img": {
+            "src": "images/fcc-frontenddev.png",
+            "alt": "Front end development project collection certificate"
+        },
+        "card-title": "Front End Libraries Certification",
+        "card-desc": "A series of small projects, created using React, to obtain the Front End Development Certification from FreeCodeCamp."
+    },
+    {
+        "href": "https://github.com/DamianHaziak/Covid19-UK-Dashboard",
+        "img": {
+            "src": "images/UKCOV19.png",
+            "alt": "Covid-19 cases as percentage of cases" 
+        },
+        "card-title": "UK COVID-19 current cases as percentage of cases",
+        "card-desc": "Small curiosity project to visualize the percentage of COVID-19 cases in the UK as a percentage of all the tests done."
+    },
+    {
+        "href": "https://damianhaziak.github.io/WebGLObjectSandbox/",
+        "img": {
+            "src": "images/WebGL.png",
+            "alt": "WebGL render of a Rubik's cube"
+        },
+        "card-title": "WebGL Object Sandbox",
+        "card-desc": "A university coursework project that uses <code>three.js</code> to render and view some objects."
+    }
+]
