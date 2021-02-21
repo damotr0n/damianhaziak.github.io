@@ -15,6 +15,7 @@ function ContactContent() {
 
     useEffect(() => {
         
+        //TODO: call fetch before render
         fetch('data/contact.json',
         {
           headers : { 

@@ -20,6 +20,7 @@ function ProjectsContent() {
 
     useEffect(() => {
         
+        //TODO: Call fetch before render
         fetch('data/projects.json',
         {
           headers : { 
