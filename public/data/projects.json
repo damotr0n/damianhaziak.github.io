@@ -54,7 +54,7 @@
         "card-desc": "Small curiosity project to visualize the percentage of COVID-19 cases in the UK as a percentage of all the tests done."
     },
     {
-        "href": "https://github.com/DamianHaziak/WebGLObjectSandbox",
+        "href": "https://damianhaziak.github.io/WebGLObjectSandbox/",
         "img": {
             "src": "images/WebGL.png",
             "alt": "WebGL render of a Rubik's cube"
