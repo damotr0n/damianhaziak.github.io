@@ -32,6 +32,7 @@ function App() {
   var menu = contentList.map(item => item.id);
 
   const [content, setContent] = useState<Icontents>(contentList[0]);
+  const [inProp, setInProp] = useState<boolean>(true);
 
   function selectContent(select: string) {
     const lookup = contentList.find(item => item.id === select);
@@ -39,13 +40,24 @@ function App() {
     if (lookup === undefined){
       throw new TypeError('Lookup did not find this type of content');
     }
-    setContent(lookup);
+    setInProp(false)
+    setTimeout(() => {
+      setContent(lookup)
+      setInProp(true)
+    }, 250)
   }
 
   return (
     <>
-        <Navbar menuItems={menu} callback={selectContent}/>
-        <ContentPage id={content.id} content={content.content} />
+        <Navbar 
+          menuItems={menu} 
+          callback={selectContent}
+        />
+        <ContentPage 
+          id={content.id} 
+          content={content.content} 
+          inProp={inProp}
+        />
     </>
   );
 }
