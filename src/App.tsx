@@ -39,6 +39,9 @@ function App() {
     // Throw error if undefined, as Array.find can technically fail to find something
     if (lookup === undefined){
       throw new TypeError('Lookup did not find this type of content');
+    } else if (lookup.id === content.id) {
+      // do nothing if current page is selected
+      return;
     }
     setInProp(false)
     setTimeout(() => {

@@ -13,6 +13,8 @@
     grid-area: header;
     width: 100vw;
     transition: height 0.1s ease-out;
+    position: relative;
+    z-index: 10;
 }
 
 #navbar-ul-wrapper {
@@ -54,6 +56,7 @@
     display: inline-block;
     position: relative;
     font-size: 2.25vh;
+    cursor: pointer;
 
     &:after { 
         background: none repeat scroll 0 0 transparent;
