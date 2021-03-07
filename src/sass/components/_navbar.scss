@@ -98,6 +98,10 @@
     #navbar {
         z-index: 2;
         height: minmax(48px, 6vh);
+
+        &.mobile-open {
+            height: 100vh;
+        }
     }
 
     #navbar-ul-wrapper {
