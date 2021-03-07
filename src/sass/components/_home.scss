@@ -114,6 +114,12 @@
 
     #home-image {
         grid-area: mid-content;
+        top: -25px;
+
+        svg {
+            height: 250px;
+        }
+
     }
 
     .front-page-icon {
