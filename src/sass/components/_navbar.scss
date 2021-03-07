@@ -12,7 +12,7 @@
     display: flex;
     grid-area: header;
     width: 100vw;
-    transition: height 0.1s ease-out;
+    transition: height 0.05s ease-out;
     position: relative;
     z-index: 10;
 }
@@ -86,6 +86,10 @@
     display: none;
 }
 
+.hamburger-react {
+    display: none;
+}
+
 // ------------------------------------------
 // Navbar mobile
 
@@ -93,7 +97,11 @@
 
     #navbar {
         z-index: 2;
-        height: 6vh;
+        height: minmax(48px, 6vh);
+
+        &.mobile-open {
+            height: 100vh;
+        }
     }
 
     #navbar-ul-wrapper {
@@ -116,7 +124,7 @@
         float: none;
         display: block;
         text-align: left;
-        font-size: 3em;
+        font-size: 11vw;
         padding: 4vh 0;
     }
 
@@ -134,6 +142,11 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .hamburger-react {
+        display: block;
+        padding: 0 3vw 0 0;
     }
 
 }

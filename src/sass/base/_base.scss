@@ -16,7 +16,7 @@ body {
 #root {
     margin: 0;
     display: grid;
-    grid-template-rows: 6vh 94vh;
+    grid-template-rows: minmax(48px, 6vh) 94vh;
     grid-template-areas: 
     "header"
     "body";

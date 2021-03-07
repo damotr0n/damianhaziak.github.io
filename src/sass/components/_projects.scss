@@ -66,8 +66,10 @@
 
     .card {
         width: 60vw;
-    }:hover {
-        transform: scale(1.05);
+        
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .card-img {
