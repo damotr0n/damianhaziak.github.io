@@ -86,6 +86,10 @@
     display: none;
 }
 
+.hamburger-react {
+    display: none;
+}
+
 // ------------------------------------------
 // Navbar mobile
 
@@ -134,6 +138,13 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .hamburger-react {
+        display: block;
+        height: 6vh !important;
+        width: 6vh !important;
+        padding: 0 2vw 0 0;
     }
 
 }
