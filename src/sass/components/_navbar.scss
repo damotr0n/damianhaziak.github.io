@@ -97,7 +97,7 @@
 
     #navbar {
         z-index: 2;
-        height: 6vh;
+        height: minmax(48px, 6vh);
     }
 
     #navbar-ul-wrapper {
@@ -120,7 +120,7 @@
         float: none;
         display: block;
         text-align: left;
-        font-size: 3em;
+        font-size: 11vw;
         padding: 4vh 0;
     }
 
@@ -142,9 +142,7 @@
 
     .hamburger-react {
         display: block;
-        height: 6vh !important;
-        width: 6vh !important;
-        padding: 0 2vw 0 0;
+        padding: 0 3vw 0 0;
     }
 
 }

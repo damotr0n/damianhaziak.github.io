@@ -8,13 +8,13 @@ function Navbar(props: {menuItems: string[], callback: any}){
     const TOPNAV_CLASS_RESPONSIVE = "topnav responsive";
     
     const [isOpen, setOpen] = useState(false);
-    const [navbarHeight, setNavbarHeight] = useState({height: "6vh"});
+    const [navbarHeight, setNavbarHeight] = useState({height: ""});
     const [topnavClass, setTopnavClass] = useState(TOPNAV_CLASS_CLOSED);
     
     const toggleNavbar = () => {
         if(isOpen){
             setOpen(false)
-            setNavbarHeight({ height: "6vh" })
+            setNavbarHeight({height: ""})
             setTopnavClass(TOPNAV_CLASS_CLOSED)
         } else {
             setOpen(true)
