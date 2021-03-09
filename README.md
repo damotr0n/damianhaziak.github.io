@@ -2,6 +2,9 @@
 
 Based on Create React App.
 
+[![DeepSource](https://deepsource.io/gh/DamianHaziak/damianhaziak.github.io.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/DamianHaziak/damianhaziak.github.io/?ref=repository-badge)
+![Build Status](https://github.com/DamianHaziak/damianhaziak.github.io/actions/workflows/ci_cd.yml/badge.svg)
+
 ---
 Made Using:
 * React
