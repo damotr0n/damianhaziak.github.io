@@ -45,6 +45,15 @@
         "card-desc": "A series of small projects, created using React, to obtain the Front End Development Certification from FreeCodeCamp."
     },
     {
+        "href": "https://replit.com/@DamianHaziak/FCC-APIs-and-Microservices-Projects",
+        "img": {
+            "src": "images/fcc-APIs.png",
+            "alt": "APIs and Microservices certificate"
+        },
+        "card-title": "APIs and Microservices Certification",
+        "card-desc": "A series of small projects, created using NodeJS, Express, MongoDB, and Mongoose, to obtain the APIs and Microservices Certification from FreeCodeCamp."
+    },
+    {
         "href": "https://github.com/DamianHaziak/Covid19-UK-Dashboard",
         "img": {
             "src": "images/UKCOV19.png",
