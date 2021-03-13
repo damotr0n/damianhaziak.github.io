@@ -9,14 +9,18 @@ html {
 
 body {
     margin: 0;
+    background-image: url('../assets/bg.jpg');
+    background-size: auto;
     background-color: #121212;
+    backdrop-filter: blur(100px);
     overflow-x: hidden;
+    height: 100%;
 }
 
 #root {
     margin: 0;
     display: grid;
-    grid-template-rows: minmax(48px, 6vh) 94vh;
+    grid-template-rows: minmax(48px, 6vh) minmax(94vh, auto);
     grid-template-areas: 
     "header"
     "body";
