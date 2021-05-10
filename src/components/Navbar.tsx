@@ -34,6 +34,7 @@ function Navbar(props: {menuItems: string[], callback: any}){
 
     var menu = props.menuItems.map(name => 
         <NavbarListItem 
+            key={name}
             title={name} 
             callback={navbarItemCallback}
         /> 
